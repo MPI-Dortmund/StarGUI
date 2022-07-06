@@ -3,7 +3,9 @@ Making star file manipulation easy with Pandas and a GUI
 
 ## Local Installation
 conda create -y -n stargui python==3.10
+
 python setup.py sdist
+
 pip install dist/stargui-0.2.0.tar.gz 
 
 
