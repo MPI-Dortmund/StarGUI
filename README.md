@@ -2,9 +2,9 @@
 Making star file manipulation easy with Pandas and a GUI
 
 ## Local Installation
-conda create -y -n stargui python==3.10
+conda create -y -n stargui python==3.10 argparse==1.4.0 pandas==1.4.3 numpy==1.23.0 pandasgui==0.2.13 starfile==0.4.11
 python setup.py sdist
-pip install dist/
+pip install dist/stargui-0.2.0.tar.gz 
 
 
 ## Requirements

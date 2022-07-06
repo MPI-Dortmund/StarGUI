@@ -4,17 +4,17 @@ from setuptools import setup, find_packages
 setup(
     name='stargui',
     version="0.2.0",
-    python_requires='3.10',
+    python_requires='>=3.10',
     packages=find_packages(),
     url='',
     license='MIT',
     author='Gavin Rice',
     install_requires=[
-        "argparse = 1.4.0",
-        "pandas = 1.4.3",
-        "starfile = 0.4.11",
-        "numpy = 1.23.0",
-        "pandasgui = 0.2.13"
+        "argparse",
+        "pandas >= 1.4.3",
+        "starfile",
+        "numpy",
+        "pandasgui",
     ],
     author_email='gavin.rice@mpi-dortmund.mpg.de',
     description='Starfile manipulation scripts and interactive GUI',
