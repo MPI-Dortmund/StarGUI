@@ -255,7 +255,7 @@ class PandasModel(QtCore.QAbstractTableModel):
         self._df.reset_index(inplace=True, drop=True)
         self.layoutChanged.emit()
 
-def main():
+def _main_():
     app = QtWidgets.QApplication(sys.argv)
     w = Widget()
     w.show()
@@ -263,7 +263,7 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
-Footer
+    _main_()
+
 
 
