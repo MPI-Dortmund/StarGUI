@@ -2,7 +2,7 @@
 # Date 20.04.21
 # Adds two columns together replacing the values from the first column with the sum
 # Then writes a new star file from the dataframe
-# Starfile: github.com/alisterburt/starfile
+
 
 
 
@@ -26,7 +26,7 @@ ColumnA = args.ColumnA
 ColumnB = args.ColumnB
 
 #Data manipulation
-df = starfile.open(STAR)
+df = starfile.read(STAR)
 print(df)
 df[ColumnA] = df[ColumnA] + df[ColumnB]
 print(df)

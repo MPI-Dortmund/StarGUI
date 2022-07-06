@@ -27,7 +27,7 @@ cur = args.Current
 rep = args.Replacement
 
 # Data manipulation
-df = starfile.open(STAR)
+df = starfile.read(STAR)
 print(df[col])
 
 if rep == None :

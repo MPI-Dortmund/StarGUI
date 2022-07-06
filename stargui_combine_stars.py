@@ -25,9 +25,9 @@ col = args.column
 
 
 # Data manipulation
-df = starfile.open(STAR)
+df = starfile.read(STAR)
 print(df)
-df2 = starfile.open(STAR2)
+df2 = starfile.read(STAR2)
 df[col] = df2[col]
 
 

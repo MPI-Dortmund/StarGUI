@@ -2,7 +2,7 @@
 # Date 20.04.21
 # Adds a column to a star file with a constant value
 # Then writes a new star file from the dataframe
-# Starfile: github.com/alisterburt/starfile
+
 
 
 
@@ -24,7 +24,7 @@ STAR = args.filename
 NAME = args.label
 VALUE = args.value
 
-df = starfile.open(STAR)
+df = starfile.read(STAR)
 print(df)
 df[NAME] = VALUE
 print(df)

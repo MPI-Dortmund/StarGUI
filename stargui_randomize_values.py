@@ -14,7 +14,7 @@ args = parser.parse_args()
 STAR = args.filename
 NAME = args.label
 
-df = starfile.open(STAR)
+df = starfile.read(STAR)
 print(df)
 print(df[NAME])
 df[NAME] = (np.random.randint(-180, 180, size=len(df)))

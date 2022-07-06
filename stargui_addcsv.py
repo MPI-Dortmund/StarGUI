@@ -2,7 +2,7 @@
 # Date 20.04.21
 # Adds a column to a star file with values from a CSV file
 # Then writes a new star file from the dataframe
-# Starfile: github.com/alisterburt/starfile
+
 
 import os
 import argparse
@@ -22,7 +22,7 @@ STAR = args.filename
 NAME = args.label
 VALUES = args.filename
 
-df1 = starfile.open(STAR)
+df1 = starfile.read(STAR)
 print(df1)
 df2 = pd.read_csv(VALUES)
 result = pd.concat([df1,df2], axis=1)
