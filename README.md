@@ -1,15 +1,27 @@
 # StarGUI
 Making star file manipulation easy with Pandas and a GUI
 
+## Local Installation
+conda create -y -n stargui python==3.10
+python setup.py sdist
+pip install dist/
+
+
 ## Requirements
-Python==3.9
-argparse==0.0.2
-pandas==1.2.4
-numpy==1.20.2
-pandasgui==0.2.10.1
+Python 3.10
+
+argparse 1.4.0
+
+pandas 1.4.3
+
+numpy 1.23.0
+
+pandasgui 0.2.13
+
+starfile 0.4.11
 
 ## Current tools
-* stargui: main GUI
+* stargui_viz: main GUI with interactive versions of all commands (in development)
 * addconstant: adds a new column with a constant value
 * addcsv: adds a new column to a star file with values from a CSV list
 * combine_stars: adds a column from one star file to another
@@ -18,5 +30,5 @@ pandasgui==0.2.10.1
 * sumcolumns: adds two column values together and replaces the first column values with the sum
 
 ## To Do
-* add option to save star file after editing values with GUI
-* construct simple GUI that allows execution of scripts with clickable buttons and specifies required arguments
+* Make things work with multi-datatable star files
+* GUI in progress

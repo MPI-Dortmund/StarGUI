@@ -38,6 +38,6 @@ else :
 print(df[col])
 
 
-starfile.new(df, 'new.star')
+starfile.write(df, 'new.star')
 print("Wrote new.star in current directory.")
 

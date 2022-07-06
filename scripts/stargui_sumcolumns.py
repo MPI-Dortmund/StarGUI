@@ -30,6 +30,6 @@ df = starfile.read(STAR)
 print(df)
 df[ColumnA] = df[ColumnA] + df[ColumnB]
 print(df)
-starfile.new(df, 'new.star')
+starfile.write(df, 'new.star')
 print("Wrote new.star in current directory.")
 
